@@ -12,7 +12,6 @@ export default defineConfig({
     }
   },
   server: {
-    host: 'mydev.woa.com',
     port: 13245
   }
 })

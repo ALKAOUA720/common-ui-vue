@@ -1,11 +1,15 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import VConsole from 'vconsole';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+new VConsole();
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(router)
+app.use(router);
+const fn = function () {
+  console.log('66');
+};
 
-app.mount('#app')
+app.mount('#app');
